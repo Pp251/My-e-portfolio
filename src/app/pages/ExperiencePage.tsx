@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Briefcase, GraduationCap, Rocket, Video } from "lucide-react";
+import { Briefcase, GraduationCap, Rocket, Video, Code } from "lucide-react";
 
 const experiences = [
   {
@@ -58,6 +58,33 @@ const experiences = [
   },
   {
     id: 4,
+    type: "freelance",
+    icon: Code,
+    title: "Web Developer",
+    role: "Freelance Developer",
+    organization: "Freelance",
+    period: "2025 - Present",
+    duration: "Current",
+    description:
+      "Developing custom web applications and websites for clients across various industries, delivering modern, responsive solutions.",
+    achievements: [
+      "Built full-stack web applications using modern frameworks and technologies",
+      "Delivered responsive, user-friendly websites optimized for performance",
+      "Implemented custom features and integrations based on client requirements",
+      "Collaborated with clients to translate business needs into technical solutions",
+      "Maintained high code quality standards and best practices across all projects",
+    ],
+    tech: [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Node.js",
+      "Tailwind CSS",
+      "Web Development",
+    ],
+  },
+  {
+    id: 5,
     type: "freelance",
     icon: Video,
     title: "Editor / Content Creator",

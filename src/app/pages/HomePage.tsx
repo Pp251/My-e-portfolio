@@ -19,7 +19,7 @@ const techStack = [
   "React",
   "PostgreSQL",
   "Docker",
-  "Scikit-learn",
+  "Web Development",
 ];
 
 export function HomePage() {
@@ -50,7 +50,11 @@ export function HomePage() {
                   className="block"
                   initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
                   animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                  transition={{ duration: 1, delay: 0.1, ease: [0.25, 0.4, 0.25, 1] }}
+                  transition={{
+                    duration: 1,
+                    delay: 0.1,
+                    ease: [0.25, 0.4, 0.25, 1],
+                  }}
                 >
                   Kamran
                 </motion.span>
@@ -58,7 +62,11 @@ export function HomePage() {
                   className="block"
                   initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
                   animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                  transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
+                  transition={{
+                    duration: 1,
+                    delay: 0.2,
+                    ease: [0.25, 0.4, 0.25, 1],
+                  }}
                 >
                   Rahman
                 </motion.span>
@@ -82,18 +90,25 @@ export function HomePage() {
               className="text-lg text-gray-600 dark:text-gray-400 max-w-lg"
               initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
+              transition={{
+                duration: 1,
+                delay: 0.4,
+                ease: [0.25, 0.4, 0.25, 1],
+              }}
             >
-              AI-focused Computer Science graduate building scalable
-              full-stack intelligent systems and production-ready
-              solutions.
+              AI-focused Computer Science graduate building scalable full-stack
+              intelligent systems and production-ready solutions.
             </motion.p>
 
             <motion.div
               className="flex flex-wrap gap-4"
               initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ duration: 1, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
+              transition={{
+                duration: 1,
+                delay: 0.6,
+                ease: [0.25, 0.4, 0.25, 1],
+              }}
             >
               <Link
                 to="/projects"
@@ -113,7 +128,11 @@ export function HomePage() {
               className="flex gap-4"
               initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
+              transition={{
+                duration: 1,
+                delay: 0.8,
+                ease: [0.25, 0.4, 0.25, 1],
+              }}
             >
               <a
                 href="https://github.com/Pp251"
@@ -144,7 +163,11 @@ export function HomePage() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-            transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
+            transition={{
+              duration: 1.2,
+              delay: 0.3,
+              ease: [0.25, 0.4, 0.25, 1],
+            }}
             className="flex justify-center"
           >
             <div className="relative">
@@ -181,7 +204,7 @@ export function HomePage() {
                 transition={{
                   delay: index * 0.05,
                   duration: 0.6,
-                  ease: [0.25, 0.4, 0.25, 1]
+                  ease: [0.25, 0.4, 0.25, 1],
                 }}
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="px-8 py-4 bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-2xl text-lg"
@@ -211,7 +234,11 @@ export function HomePage() {
               initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
               whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.1, ease: [0.25, 0.4, 0.25, 1] }}
+              transition={{
+                duration: 0.8,
+                delay: 0.1,
+                ease: [0.25, 0.4, 0.25, 1],
+              }}
             >
               Building intelligent systems that solve real-world problems
             </motion.p>
@@ -230,7 +257,7 @@ export function HomePage() {
                 tags: ["Machine Learning", "LSTM", "Data Analytics"],
               },
               {
-                title: "Computer Vision",
+                title: "Computer Vision System",
                 desc: "Landmark & Scene Analysis",
                 tags: ["Deep Learning", "Transfer Learning"],
               },
@@ -243,7 +270,7 @@ export function HomePage() {
                 transition={{
                   delay: index * 0.15,
                   duration: 0.8,
-                  ease: [0.25, 0.4, 0.25, 1]
+                  ease: [0.25, 0.4, 0.25, 1],
                 }}
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="p-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black border border-gray-200 dark:border-gray-800 rounded-3xl cursor-pointer group"

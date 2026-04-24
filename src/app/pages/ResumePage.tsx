@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Download, Github } from "lucide-react";
 import portraitImg from "../../imports/Gemini_Generated_Image_qb1mmyqb1mmyqb1m.png";
-import cvPdf from "../../imports/CV__Kamran.pdf";
+import cvPdf from "../../imports/CV _Kamran.pdf";
 
 export function ResumePage() {
   const handleDownload = () => {
@@ -16,7 +16,6 @@ export function ResumePage() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
       <div className="max-w-5xl mx-auto">
-        {/* Header Actions */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -40,14 +39,12 @@ export function ResumePage() {
           </a>
         </motion.div>
 
-        {/* Resume Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden"
         >
-          {/* Header Section */}
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white p-8 md:p-12">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
               <div>
@@ -74,14 +71,20 @@ export function ResumePage() {
                 >
                   https://github.com/Pp251
                 </a>
+                <a
+                  href="https://my-e-portfolio-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors block"
+                >
+                  https://my-e-portfolio-five.vercel.app/
+                </a>
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-[300px_1fr] gap-0">
-            {/* Left Column */}
             <div className="bg-gray-50 dark:bg-gray-900 p-8 space-y-8">
-              {/* Photo */}
               <div>
                 <img
                   src={portraitImg}
@@ -90,16 +93,13 @@ export function ResumePage() {
                 />
               </div>
 
-              {/* Education */}
               <div>
                 <h2 className="text-xl mb-4 pb-2 border-b border-gray-300 dark:border-gray-700">
                   EDUCATION
                 </h2>
                 <div className="space-y-6 text-sm">
                   <div>
-                    <h3 className="mb-1">
-                      Bachelor of Computer Science
-                    </h3>
+                    <h3 className="mb-1">Bachelor of Computer Science</h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-1">
                       Artificial Intelligence and Big Data
                     </p>
@@ -124,7 +124,6 @@ export function ResumePage() {
                 </div>
               </div>
 
-              {/* Experience */}
               <div>
                 <h2 className="text-xl mb-4 pb-2 border-b border-gray-300 dark:border-gray-700">
                   EXPERIENCE
@@ -136,7 +135,7 @@ export function ResumePage() {
                       TradeView Commercial Brokers
                     </p>
                     <p className="text-gray-600 dark:text-gray-400">
-                      July 2022 – September 2022
+                      July 2022 - September 2022
                     </p>
                   </div>
 
@@ -146,7 +145,7 @@ export function ResumePage() {
                       CtrlMedia - Digital Marketing Agency
                     </p>
                     <p className="text-gray-600 dark:text-gray-400">
-                      2025- Present.
+                      2025 - Present
                     </p>
                   </div>
 
@@ -156,25 +155,38 @@ export function ResumePage() {
                       Freelance
                     </p>
                     <p className="text-gray-600 dark:text-gray-400">
-                      2019-2025
+                      2019 - 2025
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="mb-1">Web Developer</h3>
+                    <p className="text-gray-600 dark:text-gray-400 mb-1">
+                      Freelance
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      2025 - Present
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column */}
             <div className="p-8 space-y-8">
-              {/* About Me */}
               <div>
                 <h2 className="text-2xl mb-4 pb-2 border-b border-gray-300 dark:border-gray-700">
                   ABOUT ME
                 </h2>
                 <div className="space-y-4 text-gray-700 dark:text-gray-300">
                   <p>
-                    AI-focused Computer Science graduate with hands-on
+                    AI and Big Data Computer Science graduate with hands-on
                     experience building full-stack intelligent systems, machine
                     learning models, and real-world applications.
+                  </p>
+                  <p>
+                    Strong foundation in Python, FastAPI, Flutter, and deep
+                    learning, with a focus on building production-ready
+                    solutions that solve real-world problems.
                   </p>
                   <p>
                     Skilled in developing scalable backend APIs, mobile
@@ -182,15 +194,9 @@ export function ResumePage() {
                     AI-powered vehicle diagnostics, demand forecasting systems,
                     and computer vision models.
                   </p>
-                  <p>
-                    Strong foundation in Python, FastAPI, Flutter, and deep
-                    learning, with a focus on building production-ready
-                    solutions that solve real-world problems.
-                  </p>
                 </div>
               </div>
 
-              {/* Technical Skills */}
               <div>
                 <h2 className="text-2xl mb-4 pb-2 border-b border-gray-300 dark:border-gray-700">
                   TECHNICAL SKILLS
@@ -251,43 +257,29 @@ export function ResumePage() {
                 </div>
               </div>
 
-              {/* Projects */}
               <div>
                 <h2 className="text-2xl mb-4 pb-2 border-b border-gray-300 dark:border-gray-700">
                   PROJECTS
                 </h2>
                 <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+                  <li>AutoXpert - AI-Powered Vehicle Diagnostics System</li>
                   <li>
-                    • AutoXpert – AI-Powered Vehicle Diagnostics System
+                    SmartStock AI - Demand Forecasting & Inventory Optimization
                   </li>
                   <li>
-                    • SmartStock AI – Demand Forecasting & Inventory
-                    Optimization
+                    Football Player Market Value Prediction (Machine Learning)
                   </li>
+                  <li>Marine Life Image Classification (Deep Learning)</li>
+                  <li>Web Application Penetration Testing (Cybersecurity)</li>
+                  <li>Aircraft Management System (Database Design Project)</li>
                   <li>
-                    • Football Player Market Value Prediction (Machine Learning)
-                  </li>
-                  <li>
-                    • Marine Life Image Classification (Deep Learning)
-                  </li>
-                  <li>
-                    • Web Application Penetration Testing (Cybersecurity)
-                  </li>
-                  <li>
-                    • Aircraft Management System (Database Design Project)
-                  </li>
-                  <li>
-                    • Big Data Engineering Project – Data Lake Architecture for
+                    Big Data Engineering Project - Data Lake Architecture for
                     RTA
                   </li>
+                  <li>Computer Vision System - Landmark & Scene Analysis</li>
+                  <li>E-Commerce Mobile Application - Zumar Perfume Store</li>
                   <li>
-                    • Computer Vision System – Landmark & Scene Analysis
-                  </li>
-                  <li>
-                    • E-Commerce Mobile Application – Zumar Perfume Store
-                  </li>
-                  <li>
-                    • IT Project Audit & Risk Analysis – NEST Thermostat Case
+                    IT Project Audit & Risk Analysis - NEST Thermostat Case
                     Study
                   </li>
                 </ul>
